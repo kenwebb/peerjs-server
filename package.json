@@ -1,16 +1,16 @@
 {
   "name": "peer",
-  "version": "0.2.9",
-  "description": "PeerJS server component",
+  "version": "0.2.92",
+  "description": "PeerJS server component for Xholon apps",
   "main": "lib/index.js",
   "bin": {
     "peerjs": "./bin/peerjs"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/peers/peerjs-server.git"
+    "url": "git://github.com/kenwebb/xhpserver.git"
   },
-  "author": "Michelle Bu, Eric Zhang",
+  "author": "Michelle Bu, Eric Zhang, Ken Webb",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -29,6 +29,6 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "bin/peerjs --port ${PORT:=9000}"
+    "start": "bin/peerjs --port ${PORT:=9000} --path / --debug true"
   }
 }
